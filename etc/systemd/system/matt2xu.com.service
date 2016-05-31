@@ -1,0 +1,11 @@
+[Unit]
+Description=matt2xu.com Web service
+
+[Service]
+ExecStart=/var/www/matt2xu-com
+WorkingDirectory=/var/www
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=matt2xu.com
+Environment=RUST_ENV=production
